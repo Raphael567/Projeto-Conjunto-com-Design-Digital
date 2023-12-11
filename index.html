@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" href="img/capulusblend_logo-1.png">
+    <title>Capulus Blend</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" id="navlogo">
+                <img src="img/capulusblend_logo-1.png" alt="Logo da Capulus">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#" id="nav-link1">Nossos Blends</a></li>
+                <li><a href="#" id="nav-link2">Sobre Nós</a></li>
+                <li id="nav-link3">
+                    <a href="#">Pesquisar</a>
+                    <img src="img/search-icon-3.png" alt="Ícone de pesquisar">
+                </li>
+                <li><a href="login.html" id="nav-link4">Entrar</a></li>
+                <li><a href="cadastro.html" id="nav-link5">Registrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="introduction">
+            <article class="introduction-text">
+                <h1 id="int-title">Capulus Blend: sabor único experiência incomparável</h1>
+                <p id="int-subtitle">Saboreie a excelência em cada gole: Capulus Blend o café que eleva sua experiência</p>
+                <button id="int-btn">Saiba Mais</button>
+            </article>
+            <section class="int-img">
+                <img src="img/introduction-coffe.png" alt="Café grnade com grãos de café embaixo">
+            </section>
+        </section>
+        <section class="about-us">
+            <article class="about-us-text">
+                <article class="abt-us-titles">
+                    <article class="abt-us-subtitle">
+                        <p id="abt-us-subtitle">Um pouco sobre o que fazemos</p>
+                        <div class="abt-us-underline-subtitle"></div>
+                    </article>
+                    <h1 id="abt-us-title">Capulus Blend: arte na mistura, sabor em cada gole</h1>
+                </article>
+                <p id="abt-us-text">Na Capulus Blend, a mágica da mistura de grãos cria experiências únicas. Aromas envolventes e sabores distintos se entrelaçam em cada xícara, elevando o prazer do café a um patamar superior. Aqui, a busca pela perfeição na arte da mistura resulta em uma experiência inigualável para todos os apreciadores</p>
+                <button id="abt-us-btn">Sobre Nós</button>
+            </article>
+            <article class="abt-us-img">
+                <img src="img/about-us-coffee.png" alt="Café preto e grande sobre grãos">
+            </article>
+        </section>
+        <section class="coffee-transition">
+            <img src="img/coffee-blast.png" alt="Café sendo derramado/Explosão de café">
+        </section>
+        <section class="signup-login">
+            <article class="sup-login">
+                <form action="" id="login">
+                    <h1 id="login-title">Faça seu login</h1>
+                    <input name="email" class="email" id="login-email" placeholder="Digite seu email">
+                    <article class="login-psswd">
+                        <input type="password" class="senha" name="password" id="login-password" placeholder="Digite sua senha">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </article>
+                    <button type="button" id="login-btn" onclick="realizarLogin(event)">Entrar</button>
+                    <article class="showLoginResult"></article>
+                </form>
+            </article>
+                <div class="sup-login-divisor"></div>
+            <article class="signup">
+                <h1 id="sup-title">Cadastre-se e fique por dentro de todos os sabores novos</h1>
+                <p id="sup-text">Junte-se à comunidade Capulus Blend! Cadastre-se agora para acesso a ofertas exclusivas, lançamentos especiais e conteúdos envolventes sobre café. Transforme seus momentos de pausa em experiências únicas. Registre-se e celebre o prazer do café conosco!</p>   
+                <button id="sup-btn" onclick="abrirLink()">Cadastrar</button>
+            </article>
+        </section>
+        <section class="shop-blends">
+            <article class="bean1">
+                <img src="img/bean1.png" alt="Três grãos de café">
+            </article>
+            <article class="sb-titles">
+                <h1 id="sb-title">Desvende a excelência do café com nossos blends mais famosos</h1>
+                <p id="sb-subtitle">Nossos Blends são a escolha perfeita para quem busca o extraordinário em cada gole</p>
+            </article>
+            <ul class="blends">
+                <li id="blend1">
+                    <img src="img/blend1.png" alt="Aurora Blend">
+                    <h1 id="blend-title">Aurora Blend</h1>
+                    <p id="blend-taste">50% colombiano|50% etíope</p>
+                    <p id="blend-price">R$ 12,00</p>
+                    <button id="blend-btn">Compre agora</button>
+                </li>
+                <li id="blend2">
+                    <img src="img/blend2.png" alt="Seda Negra">
+                    <h1 id="blend-title">Seda Negra</h1>
+                    <p id="blend-taste">70% arábica|30% robusta</p>
+                    <p id="blend-price">R$ 10,00</p>
+                    <button id="blend-btn">Compre agora</button>
+                </li>
+                <li id="blend3">
+                    <img src="img/blend3.png" alt="Vento Suave">
+                    <h1 id="blend-title">Vento Suave</h1>
+                    <p id="blend-taste">75% colombiano|25% vietnamita</p>
+                    <p id="blend-price">R$ 14,00</p>
+                    <button id="blend-btn">Compre agora</button>
+                </li>
+            </ul>
+            <article class="bean2">
+                <img src="img/bean2.png" alt="1 grão de café e meio">
+            </article>
+        </section>
+        <footer>
+            <img src="img/capulusblend-2.png" alt="Logo da Capulus" id="capulusblend_logo-2">
+            <article class="footer-texts">
+                <p id="capulus-enterprise">© Capulus Blend 2023 - 2023 Cafeteria</p>
+                <ul id="footer-menu1">
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Nossos Blends</a></li>
+                </ul>
+                <ul id="footer-menu2">
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </article>
+            <section class="socialmedias">
+                <ul id="footer-menu3">
+                    <li>
+                        <a href="#">
+                            <img src="img/yt-icon.png" alt="ícone do Youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/fb-icon.png" alt="ícone do Facebook">
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <img src="img/inst-icon.png" alt="ícone do Instagram">
+                        </a>
+                    </li>    
+                </ul>
+            </section>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/capulusblend_logo-1.png">
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="js/script.js"></script>
+    <title>Capulus Blend - Login</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" id="navlogo">
+                <img src="img/capulusblend_logo-1.png" alt="Logo da Capulus">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#" id="nav-link1">Nossos Blends</a></li>
+                <li><a href="#" id="nav-link2">Sobre Nós</a></li>
+                <li id="nav-link3">
+                    <a href="#">Pesquisar</a>
+                    <img src="img/search-icon-3.png" alt="">
+                </li>
+                <li><a href="#" id="nav-link4">Entrar</a></li>
+                <li><a href="#" id="nav-link5">Registrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login">
+            <h1 id="login-title">Faça seu Login</h1>
+            <form id="login-in">
+                <input type="name" placeholder="E-MAIL" id="login-inputs" class="email">
+                <article class="Senha">
+                    <input type="password" placeholder="SENHA" id="login-inputs" class="senha">
+                    <a href="#">Esqueceu sua senha?</a>
+                </article>
+                <button type="button" id="btn-submit" onclick="realizarLogin(event)">Entrar</button>
+            </form>
+            <article class="showLoginResult"></article>
+        </section>
+        <footer>
+            <img src="img/capulusblend-2.png" alt="Logo da Capulus" id="capulusblend_logo-2">
+            <article class="footer-texts">
+                <p id="capulus-enterprise">© Capulus Blend 2023 - 2023 Cafeteria</p>
+                <ul id="footer-menu1">
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Nossos Blends</a></li>
+                </ul>
+                <ul id="footer-menu2">
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </article>
+            <section class="socialmedias">
+                <ul id="footer-menu3">
+                    <li>
+                        <a href="#">
+                            <img src="img/yt-icon.png" alt="ícone do Youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/fb-icon.png" alt="ícone do Facebook">
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <img src="img/inst-icon.png" alt="ícone do Instagram">
+                        </a>
+                    </li>    
+                </ul>
+            </section>
+        </footer>
+    </main>
+</body>
+</html>
