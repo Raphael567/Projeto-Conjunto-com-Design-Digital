@@ -29,7 +29,7 @@ a{
     color: #FFF4CF;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
 
     header{
         z-index: 1000;
@@ -75,11 +75,13 @@ a{
     .introduction {
         position: relative;
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(7, 147px);
         justify-content: center;
         background-image: url('../img/int-coffeebkground.png');
+        background-repeat: no-repeat;
+        background-size: cover;
         color: #FFF4CF;
-        width: 100%;
         height: 709px;
     }
     
@@ -512,6 +514,546 @@ a{
         width: 100%;
         height: 77px;
         background: #FFF4CF;
+    }
+
+    #footer-menu3{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 23px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px){
+
+    header{
+        z-index: 1000;
+        position: fixed;
+        display: grid;
+        grid-template-columns: 147px 147px 147px 147px 147px 147px 147px;
+        grid-auto-rows: max-content;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background: #201007;
+    }
+    
+    .navbar{
+        gap: 270px;
+        display: flex;
+    }
+
+    #navlogo img{
+        margin-left: 75px;
+        margin-top: 15px;
+        width: 75px;
+    }
+    
+    .nav-menu{
+        display: flex;
+        text-wrap: nowrap;
+        width: 184px;
+        height: 100px;
+        align-items: center;
+        gap: 50px;
+        font-family: 'PlayFair-Display-semibold';
+        font-size: 12px;
+    }
+
+    #nav-link3{
+        display: flex;
+        gap: 15px;
+    }
+
+    #nav-link3 a{
+        margin-top: 5px;
+    }
+    
+    #nav-link5{
+        margin-right: 64px;
+    }
+    
+    .introduction {
+        position: relative;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        gap: 25px;
+        background-image: url('../img/int-coffeebkground.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #FFF4CF;
+        height: 709px;
+    }
+    
+    .introduction::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(32, 16, 7, 0.70);
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    .introduction-text{
+        grid-column: 2;
+        margin-top: 242px;
+        text-wrap: wrap;
+        z-index: 1;
+    }
+
+    #int-title{
+        color: #FFF4CF;
+        width: 450px;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    #int-subtitle{
+        margin-top: 16px;
+        width: 350px;
+        height: 75px;
+        flex-shrink: 0;
+        color: #FFF4CF;
+        font-family: "PlayFair-Display-semibold";
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #int-btn{
+        width: 122.327px;
+        height: 34px;
+        border-radius: 100px;
+        background: #FFF4CF;
+        color: #201007;
+        border: none;
+        font-family: 'PlayFair-Display-bold';
+        font-size: 15px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .int-img{
+        grid-column: 4;
+        margin-top: 225px;
+        z-index: 1;
+    }
+
+    .int-img img{
+        width: 300px;
+    }
+
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        width: 100%;
+        height: 522px;
+        background: #FFF4CF;
+    }
+
+    .about-us > article{
+        margin-top: 140px;
+    }
+
+    .about-us-text{
+        grid-column: 2;
+        color: #201007;
+    }
+
+    .abt-us-titles{
+        width: 550px;
+        height: 143px;
+        color: #201007;
+        font-family: 'PlayFair-Display-semibold';
+    }
+
+    #abt-us-subtitle{
+        font-size: 18px;
+        font-weight: 600;
+        border-bottom: 1px solid #201007;
+        display: inline-block;
+        line-height: 1.5em;
+    }
+
+    #abt-us-title{
+        margin-top: 20px;
+        color: #201007;
+        font-family: "PlayFair-Display-semibold";
+        font-size: 25px;
+        width: 450px;
+        font-weight: 600;
+    }
+
+    #abt-us-text{
+        color:#201007;
+        font-weight: 400;
+        font-size: 15px;
+        width: 450px;
+    }
+
+    #abt-us-btn{
+        margin-top: 25px;
+        width: 120px;
+        height: 33px;
+        border-radius: 100px;
+        background: #201007;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF4CF;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .abt-us-img{
+        grid-column: 4;
+    }
+
+    .abt-us-img img{
+        width: 250px;
+    }
+
+    .coffee-transition{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        position: absolute;
+        margin-top: -180px;
+    }
+
+    .coffee-transition img{
+        width: 350px;
+    }
+
+    .signup-login{
+        color: #FFF4CF;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        column-gap: 50px;
+        width: 100%;
+        height: 682px;
+        background: #201007;
+    }
+
+    .sup-login{
+        grid-column: 1;
+        margin-top: 100px;
+        display: grid;
+        justify-content: start;
+        align-items: start;
+    }
+
+    #login{
+        display: grid;
+        justify-items: center;
+    }
+
+    #login input{
+        background-color: #FFF4CF;
+        width: 230.466px;
+        height: 41px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 15px;
+        color: rgba(32, 16, 7, 0.50);
+        font-size: 12px;
+        font-weight: 700;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 15px;
+    }
+
+    #login-title{
+        justify-self: center;
+        height: 85px;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .login-psswd{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #login-email{
+        margin-bottom: 25px;
+    }
+
+    #login-password{
+        background-image: url('../img/eye-password.png');
+        background-repeat: no-repeat;
+        background-position: 190px;
+        background-size: 20px;
+    }
+
+    .login-psswd a{
+        font-family: 'PlayFair-Display-bold';
+        height: 28px;
+        font-size: 12px;
+        text-decoration-line: underline;
+        margin-left: auto;
+        margin-bottom: 13px;
+    }
+
+    #login-btn{
+        display: flex;
+        width: 83.147px;
+        height: 33px;
+        border-radius: 100px;
+        background: #FFF4CF;
+        justify-content: center;
+        align-items: center;
+        color: #201007;
+        font-family: 'PlayFair-Display-bold';
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .showLoginResult{
+        justify-self: center;
+        align-self: center;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 25px;
+    }
+
+    .sup-login-divisor{
+        grid-column: 3;
+        margin-top: 90px;
+        width: 1px;
+        height: 422px;
+        background: #FFF4CF;
+        justify-self: center;
+    }
+
+    .signup{
+        grid-column: 4;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sup-title{
+        width: 250.771px;
+        color: #FFF4CF;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: right;
+        justify-self: end;
+        align-self: end;
+    }
+
+    #sup-text{
+        margin-top: 43px;
+        width: 350px;
+        height: 203px;
+        color: #FFF4CF;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: right;
+    }
+
+    #sup-btn{
+        width: 137.807px;
+        height: 43px;
+        border-radius: 100px;
+        background: #FFF4CF;
+        color: #201007;
+        font-size: 20px;
+        font-weight: 700;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    .bean1{
+        position: absolute;
+        margin-top: 90px;
+        margin-left: 50px;
+    }
+
+    .bean1 img{
+        width: 100px;
+    }
+
+    .bean2 img{
+        width: 50px;
+    }
+
+    .bean2{
+        position: absolute;
+        display: flex;
+        justify-self: flex-end;
+        align-self: center;
+        margin-top: 150px;
+    }
+
+    .shop-blends{
+        width: 100%;
+        height: 689px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+
+    .sb-titles{
+        margin-top: 60px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    #sb-title{
+        color: #201007;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    #sb-subtitle{
+        margin-top: 5px;
+        color: #201007;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .blends{
+        margin-left: 50px;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #blend1 img{
+        width: 150px;
+    }
+
+    #blend2 img{
+        width: 325px;
+    }
+
+    #blend3 img{
+        width: 225px;
+    }
+
+    .blends li{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blends h1{
+        margin-top: 3px;
+        color: #201007;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    #blend-taste{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #201007;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    #blend-price{
+        margin-bottom: 25px;
+        color: #201007;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;    
+    }
+
+    .blends button{
+        font-size: 12px;
+        align-self: center;
+        color: #FFF4CF;
+        width: 119px;
+        height: 38px;
+        border-radius: 100px;
+        background: rgba(32, 16, 7, 0.97);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #blend1{
+        margin-top: 36px;
+    }
+
+    #blend1 h1{
+        margin-top: 35px;
+    }
+
+    #blend3 h1{
+        margin-top: -10px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #FFF4CF;
+        margin-top: 55px;
+        height: 366px;
+        background-color: #201007;
+        border-top: 1px solid #FFF4CF;
+    }
+
+    #capulusblend_logo-2{
+        margin-top: -50px;
+    }
+
+    #capulusblend_logo-2{
+        width: 100px;
+    }
+
+    #capulus-enterprise{
+        margin-top: 34px;
+        color: #FFF4CF;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #footer-menu1{
+        display: flex;
+        justify-content: center;
+        margin-top: 66px;
+        gap: 50px;
+        color: #FFF4CF;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    #footer-menu2{
+        display: flex;
+        margin-top: 45px;
+        gap: 40px;
+        height: 18px;
+        color: #FFF4CF;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .socialmedias{
+        margin-top: 33px;
+        width: 100%;
+        height: 77px;
+        background: #FFF4CF;
+    }
+
+    .socialmedias img{
+        width: 25px;
     }
 
     #footer-menu3{

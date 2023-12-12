@@ -30,7 +30,7 @@ a{
     color: #FFF4CF;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
     header{
         z-index: 1000;
         position: fixed;
@@ -224,6 +224,225 @@ a{
         width: 100%;
         height: 77px;
         background: #FFF4CF;
+    }
+
+    #footer-menu3{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 23px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px){
+    header{
+        z-index: 1000;
+        position: fixed;
+        display: grid;
+        grid-template-columns: 147px 147px 147px 147px 147px 147px 147px;
+        grid-auto-rows: max-content;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background: #201007;
+    }
+    
+    .navbar{
+        gap: 270px;
+        display: flex;
+    }
+
+    #navlogo img{
+        margin-left: 75px;
+        margin-top: 15px;
+        width: 75px;
+    }
+    
+    .nav-menu{
+        display: flex;
+        text-wrap: nowrap;
+        width: 184px;
+        height: 100px;
+        align-items: center;
+        gap: 50px;
+        font-family: 'PlayFair-Display-semibold';
+        font-size: 12px;
+    }
+
+    #nav-link3{
+        display: flex;
+        gap: 15px;
+    }
+
+    #nav-link3 a{
+        margin-top: 5px;
+    }
+    
+    #nav-link5{
+        margin-right: 64px;
+    }
+
+    .sign{
+        width: 100%;
+        color: #201007;
+        margin-top: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+
+    #sign-title{
+        grid-column: span 7;
+        justify-self: center;
+        color: #201007;
+        font-weight: 700;
+    }
+
+    #sign-in{
+        grid-column: span 7;
+        margin-top: 70px;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: repeat(2, 362px);
+        gap: 35px;
+    }
+
+    .sign-inputs{
+        padding: 5px 0px 5px 3px;
+        height: 22px;
+        color: rgba(32, 16, 7, 0.80);
+        background-color: #FFF4CF;
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 2.86px;
+        border-bottom-color: #201007;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    #nm-celular{
+        grid-column: span 2;
+    }
+
+    #sign-checkbox{
+        justify-self: start;
+        grid-column: span 2;
+        display: flex;
+        gap: 29px;
+        width: 659px;
+        color: rgba(32, 16, 7, 0.80);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2.2px;
+    }
+
+    .custom-checkbox{
+        display: none;
+    }
+
+    #checkbox{
+        align-self: center;
+        display: inline-block;
+        text-align: center;
+        width: 25px;
+        height: 18.333px;
+        border: 1px solid #201007;
+        border-radius: 5px;
+        background-color: #FFF4CF;
+        cursor: pointer;
+    }
+    
+    #checkbox::before{
+        content: '\2713';
+        color: #201007;
+        font-size: 16px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .custom-checkbox:checked + #checkbox::before {
+        opacity: 1;
+    }
+
+    #btn-submit{
+        grid-column: span 2;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 122px;
+        margin-top: 67px;
+        width: 129px;
+        height: 38px;
+        background-color: rgba(32, 16, 7, 0.97);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF4CF;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    footer{
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #FFF4CF;
+        margin-top: 55px;
+        height: 366px;
+        background-color: #201007;
+        border-top: 1px solid #FFF4CF;
+    }
+
+    #capulusblend_logo-2{
+        margin-top: -50px;
+    }
+
+    #capulusblend_logo-2{
+        width: 100px;
+    }
+
+    #capulus-enterprise{
+        margin-top: 34px;
+        color: #FFF4CF;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #footer-menu1{
+        display: flex;
+        justify-content: center;
+        margin-top: 66px;
+        gap: 50px;
+        color: #FFF4CF;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    #footer-menu2{
+        display: flex;
+        margin-top: 45px;
+        gap: 40px;
+        height: 18px;
+        color: #FFF4CF;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .socialmedias{
+        margin-top: 33px;
+        width: 100%;
+        height: 77px;
+        background: #FFF4CF;
+    }
+
+    .socialmedias img{
+        width: 25px;
     }
 
     #footer-menu3{
